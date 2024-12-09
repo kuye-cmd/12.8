@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>  <input type="text"  placeholder="64编码" id="a"></div>
+    <div><input type="text" placeholder="字母" id="b"></div>
+    <button onclick="coding64()">转码</button>
+    <button onclick="decoding64()">解码</button>
+    <select name="a" id="a" >12345
+         
+    </select> 
+</body>
+<script>
+    //实现base64编码
+    //找到原文中每一个字符在ascii编码表中对应的编码(查表)
+    //将上一步得到的code转为二进制的字符串8位(不够就补0)
+    //将上一步得到的8位二进制字符串没六位一分割,如果最后不够六位 补0;
+    //自己生成一个A-Za-z0-9/(如果不够就补)
+    // coding();
+    function coding64(){
+        var char = document.querySelector('#a').value;
+        var str="";
+        var str1="";
+        var arr=[];
+        for(var i=0 ;i<char.length;i++){
+            str1=char[i].charCodeAt().toString(2);
+            while(str1.length!==8){str1="0"+str1;}
+            str+=str1;
+            str1="";
+        }
+        while (str.length %6!==0) {str= str+"0";}
+        arr=str.match(/[0-1]{6}/g);
+        for (let j = 0; j < arr.length; j++) {arr[j]=parseInt(arr[j], 2)}
+        var a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+        for (let x = 0; x < arr.length; x++) {str1+=a[arr[x]]}
+        while ((str1.length)%4!==0) {str1=str1+"="}
+        console.log(str1);
+        document.querySelector('#b').value=str1;
+    }
+    // decoding();
+    function decoding() {
+        var char = document.querySelector('#b').value;
+        console.log(char);
+        var str="";
+        var str1="";
+        var arr=[];
+        var a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+        for(var i=0;i<char.length;i++){
+            if (char[i]!="=") {
+                arr[i]=a.indexOf(char[i]).toString(2) ;
+                while (arr[i].length!=6) {arr[i]="0"+arr[i]}
+                str+=arr[i];
+            }
+        }
+        // console.log(str.length-(str.length%8),str.length%8);
+        str=str.slice(0,str.length-(str.length%8)+1);
+        console.log(str);
+        arr=str.match(/[0-1]{8}/g);str="";
+        for(var j=0 ;j<arr.length;j++){
+            str+=String.fromCharCode(parseInt(arr[j],2))
+        }
+        document.querySelector('#a').value=str;
+    }
+</script>
+</html>

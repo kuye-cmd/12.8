@@ -1,0 +1,419 @@
+* {
+    margin: 0;  
+    height: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.top {
+    width: 1228px;
+    height: 109px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+.top .logo {
+	width: 424px;
+	height: 47px;
+    background-color: red;
+    margin: 38px 0 24px 0;
+
+}
+
+
+.top ul{
+    width: 687px;
+    height: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top ul li {
+    margin: 52px 0 40px 0;
+}
+
+.top ul li:nth-child(2){
+    color: blue;
+}
+
+.contact-banner {
+	/* width: 1920px; */
+	height: 499px;
+    background-color: #ccc;
+}
+
+/* 导航栏 */
+.content{
+    width: 1228px;
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.content .left{
+    width: 186px;
+    height: 15px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #666666;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .left p{
+    font-size: 15px;
+}
+
+.content .left .icon{
+    width: 16px;
+    height: 12px;
+    background-color: aqua;
+}
+
+.content .right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .right {
+    width: 566px;
+}
+
+.content .right li{
+    font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #666666;
+}
+
+.content .right li:nth-child(1){
+    color: blue;
+
+}
+
+.profile{
+    width: 1228px;
+    height: 532px;
+    margin: 140px auto 0;
+}
+
+.profile .profile-top {
+    text-align: center;
+    display: block;
+}
+
+.profile .profile-top h2{
+    height: 24px;
+    margin-bottom: 100px;
+}
+
+.profile .profile-top h6 {
+    height: 15px;
+}
+
+.profile div{
+    justify-content: space-between;
+    display: flex;
+}
+
+.profile div .left{
+    width: 734px;
+	height: 255px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 40px;
+	letter-spacing: 1px;
+	color: #333333;
+    margin-top: 134px;
+}
+
+.profile div .right{
+    width: 415px;
+	height: 390px;
+    background-color: tomato;
+    margin-top: 142px;
+}
+
+
+
+.banner{
+    /* width: 1920px; */
+	height: 1801px;
+    background-color: #666666;
+    padding-top: 48px;
+}
+
+.banner .environment{
+    width: 1228px;
+    height: 424px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.banner .environment h3,
+.banner .training h3,
+.banner .team h3{
+    width: 144px;
+	height: 24px;
+	font-family: MicrosoftYaHei-Bold;
+	font-size: 24px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+    margin: 0 auto;
+}
+
+.banner .bt {
+    width: 1228px;
+    display: flex;
+    margin: 80px auto 0;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.banner .bt #left{
+    width: 590px;
+	height: 320px;
+	background-color: #005ba8;
+	opacity: 0.85;
+    margin-right: 10px;
+}
+
+.banner .bt .r {
+    width: 590px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 15x;
+}
+
+.banner .bt .right{
+    width: 288px;
+    height: 155px;
+    background-color:  #ccc;
+    /* margin-right: 10px; */
+    margin-bottom: 10px;
+}
+
+
+.banner .training {
+	width: 1225px;
+	height: 498px;
+    background-color: #ccc;
+    margin: 113px auto 0px;
+}
+
+.banner .training ul{
+    width: 1225px;
+    margin-top: 66px;
+    height: 408px;
+    display: flex;
+    padding: 0px;
+}
+
+.banner .training ul li{
+    width: 306px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+.banner .training ul li div{
+    width: 306px;
+	height: 206px;
+    background-color: black;
+    
+}
+
+.banner .training ul li h4{
+    width: 198px;
+    height: 15px;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #3178b4;
+    margin: 37px auto 0;
+}
+
+.banner .training ul li p{
+    width: 226px;
+	height: 122px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 22px;
+	letter-spacing: 0px;
+	color: #333333;
+    margin: 28px auto 0;
+}
+
+
+.team {
+	width: 1199px;
+	height: 605px;
+    margin-top: 115px;
+    background-color: #ccc;
+    margin: 115px auto 0;
+}
+
+.banner .team ul{
+    width: 100%;
+    height: 514px;
+    background-color: #005ba8;
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .team ul li{
+    width: 347px;
+    height: 514px;
+    background-color: #ccc;
+}
+
+.banner .team ul li h4{
+    width: 100%;
+    text-align: center;
+	height: 19px;
+	font-family: MicrosoftYaHei;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+    margin: 0 auto 18px;
+}
+
+.banner .team ul li p{
+    width: 100%;
+    text-align: center;
+	height: 12px;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+    margin: 0 auto 30px;
+}
+
+.banner .team ul li div{
+    width: 347px;
+	height: 347px;
+    background-color: black;
+    margin: 0 auto 36px;
+}
+
+.banner .team ul li button{
+    width: 180px;
+	height: 52px;
+	background-color: #3178b4;
+    border: none;
+    margin: 0 82px;
+}
+
+.footer {
+	height: 287px;
+    background-color: #222;
+    padding-top: 63px;
+}
+
+.footer ul{
+    width: 720px;
+    height: 210px;
+    margin-left: calc(60% - 720px);
+    /* background-color: #ccc; */
+    display: flex;
+    
+}
+
+.footer ul>div{
+    width: 1px;
+    height: 210px;
+    background-color: #666;
+}
+
+.footer ul li{
+    width: 120px;
+    height: 210px;
+    /* background-color: red; */
+    color: #ffffff;
+    margin-right: 1px;
+}
+
+.footer ul li:nth-child(7){
+    width: 300px;
+}
+
+.footer ul li dt{
+    width: 100%;
+    text-align: center;
+    height: 15px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 33px;
+}
+
+
+
+.footer ul li h2{
+    width: 100%;
+    text-align: center;
+	height: 19px;
+	font-family: MicrosoftYaHei;
+	font-size: 24px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30px;
+	letter-spacing: 0px;
+	color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.footer ul li dd{
+    width: 100%;
+    text-align: center;
+	height: 20px;
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 28px;
+	letter-spacing: 0px;
+	color: #666666;
+    margin-top: 8px;
+}
+
+.icp-16004554 {
+	width: 333px;
+	height: 14px;
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 28px;
+	letter-spacing: 0px;
+	color: #666666;
+    margin: 40px auto 0;
+}
